@@ -1,10 +1,16 @@
 body {
+    transition: background-color 0.5s, color 0.5s; /* Transição suave para a cor de fundo e texto */
     background-color: white;
     color: black;
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
     padding: 20px;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 h1 {

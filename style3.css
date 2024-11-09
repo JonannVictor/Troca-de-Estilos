@@ -1,36 +1,87 @@
+/* style3.css */
 body {
-    background-color: lightblue;
-    color: darkblue;
+    transition: background-color 0.5s, color 0.5s;
+    background-color: #004B87; /* Azul do Grêmio */
+    color: white;
     font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 0;
     padding: 20px;
+    transition: background-color 0.5s; /* Transição suave para a cor de fundo */
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    animation: fadeIn 1s; /* Animação de aparecimento */
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.5;
+    animation: fadeIn 1.5s; /* Animação de aparecimento */
+}
+
+#logo {
+    display: block;
+    margin: 20px auto;
+    width: 150px; /* Largura fixa */
+    animation: bounce 1s infinite; /* Animação de pulsar */
 }
 
 button {
     padding: 10px 20px;
     margin-top: 20px;
     font-size: 1em;
-    border: none;
+    background-color: white;
+    color: #004B87; /* Azul do Grêmio */
+    border: 2px solid white;
     border-radius: 5px;
-    background-color: darkblue;
-    color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s; /* Transições suaves */
 }
 
 button:hover {
-    background-color: navy; /* Tom mais escuro de azul */
+    background-color: #A50024; /* Um tom mais escuro de vermelho */
+    color: white;
+    transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
+}
+
+/* Adicione isso ao seu CSS */
+
+header {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adicione isso ao seu CSS */
+
+header {
+    background-color: #007BFF; /* Azul */
+    color: white;
+    padding: 20px 0;
 }
 
 @media (max-width: 600px) {
@@ -44,5 +95,27 @@ button:hover {
 
     button {
         width: 100%;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
     }
 }
