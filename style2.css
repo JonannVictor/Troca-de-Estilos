@@ -51,14 +51,6 @@ button:hover {
     transform: scale(1.05); /* Aumenta levemente o botão ao passar o mouse */
 }
 
-/* Adicione isso ao seu CSS */
-
-header {
-    background-color: #007BFF; /* Azul */
-    color: white;
-    padding: 20px 0;
-}
-
 @media (max-width: 600px) {
     h1 {
         font-size: 2em;
