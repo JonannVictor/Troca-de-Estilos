@@ -1,0 +1,25 @@
+body {
+    background-color: #C8102E; /* Vermelho do Internacional */
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: white;
+    color: #C8102E; /* Vermelho do Internacional */
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A50024; /* Um tom mais escuro de vermelho */
+    color: white;
+}
