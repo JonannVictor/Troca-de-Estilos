@@ -1,8 +1,20 @@
 body {
     background-color: #C8102E; /* Vermelho do Internacional */
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
 }
 
 #logo {
@@ -13,13 +25,30 @@ body {
 button {
     padding: 10px 20px;
     margin-top: 20px;
+    font-size: 1em;
     background-color: white;
     color: #C8102E; /* Vermelho do Internacional */
     border: 2px solid white;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
     background-color: #A50024; /* Um tom mais escuro de vermelho */
     color: white;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+    }
 }
